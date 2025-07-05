@@ -66,7 +66,7 @@ function fetchAndFormatXKCDData(): string {
     // TODO: Implement this function
     $ver = file_get_contents("https://xkcd.com/".rand(1,3000)."/info.0.json");
     $ver1 =(array) json_decode($ver);
-    return "<h2>XKCD Comic</h2><img src=".$ver1['img']." alt='XKCD Comic'><p><a href='localhost\htdocs\Rt_campus\xkcd-Dulal03\src\unsubscribe.php' id='unsubscribe-button'>Unsubscribe</a></p>";
+    return "<h2>XKCD Comic</h2><img src=".$ver1['img']." alt='XKCD Comic'><p><a href='localhost\XKCD\unsubscribe.php' id='unsubscribe-button'>Unsubscribe</a></p>";
 }
 
 /**
